@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>1900年与2000年美国人口</title>
+        <title>英雄联盟职业联赛2019年春季赛数据对比</title>
         <script type="text/javascript" src="d3/d3.js"></script>
         <style type="text/CSS">
                 .axis path,
@@ -21,7 +21,7 @@
               width: 10px;
              margin: 10px auto;     
     }    
-    #biaoti{margin:0 auto;width:100px;height:30px; line-height:10px; text-align:center; border:1px }
+    #biaoti{margin:0 auto;width:300px;height:30px; line-height:10px; text-align:center; border:1px }
     .div-inline,.div-inline2,.div3{display:inline-block ; 
 width: 50%;
 height: 30px;
@@ -32,7 +32,7 @@ box-sizing: border-box;
             </style>
     </head>
      <body> 
-            <div id="biaoti">职业联赛对比</div>
+            <div id="biaoti">英雄联盟职业联赛2019年春季赛数据对比</div>
             <div class="div-inline" id="nation">位置：</div>
             <div class="div-inline" id="nation2">位置:</div>
             <div class="div-inline2" id="degree">ID：</div>
@@ -286,6 +286,31 @@ mbutton.onclick=function(){
   .attr("x", 610)
   .attr("y", 60)
   .text(val2);
+  d3.select("svg")
+    .append("text")
+    .attr("x",40)
+    .attr("y",50)
+    .text("KDA:（杀人数+助攻数）/死亡数");
+    d3.select("svg")
+    .append("text")
+    .attr("x",40)
+    .attr("y",70)
+    .text("GPM:每分钟金钱");
+    d3.select("svg")
+    .append("text")
+    .attr("x",40)
+    .attr("y",90)
+    .text("CSPM:每分钟补刀数");
+    d3.select("svg")
+    .append("text")
+    .attr("x",40)
+    .attr("y",110)
+    .text("Output:每分钟造成伤害");
+    d3.select("svg")
+    .append("text")
+    .attr("x",40)
+    .attr("y",130)
+    .text("Damages:每分钟承受伤害");
 };
 var mbutton2=document.getElementById("button2");
 mbutton2.onclick=function(){
@@ -360,6 +385,31 @@ mbutton2.onclick=function(){
   .attr("x", 610)
   .attr("y", 80)
   .text(val4);
+  d3.select("svg")
+    .append("text")
+    .attr("x",40)
+    .attr("y",50)
+    .text("KDA:（杀人数+助攻数）/死亡数");
+    d3.select("svg")
+    .append("text")
+    .attr("x",40)
+    .attr("y",70)
+    .text("GPM:每分钟金钱");
+    d3.select("svg")
+    .append("text")
+    .attr("x",40)
+    .attr("y",90)
+    .text("CSPM:每分钟补刀数");
+    d3.select("svg")
+    .append("text")
+    .attr("x",40)
+    .attr("y",110)
+    .text("Output:每分钟造成伤害");
+    d3.select("svg")
+    .append("text")
+    .attr("x",40)
+    .attr("y",130)
+    .text("Damages:每分钟承受伤害");
 };
 </script>
 
